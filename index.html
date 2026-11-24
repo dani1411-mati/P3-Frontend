@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos en la nube</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Productos en la nube</h1>
+
+        <form id="formProducto">
+            <input type="text" id="txtNombre"
+                placeholder="Nombre" required>
+
+            <input type="number" id="txtPrecio"
+                placeholder="Precio" min="0" step="0.01" required>
+
+            <input type="number" id="txtStock"
+                placeholder="Stock" min="0" step="1" required>
+
+            <button type="submit">Agregar producto</button>
+        </form>
+
+        <p id="mensaje"></p>
+    </header>
+
+    <main id="resultados"></main>
+
+    <script src="app.js"></script>
+</body>
+</html>
